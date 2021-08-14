@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -17,7 +18,7 @@
             </a>
             <ul class="menu">
                 <li><a class="link" href="./index.html">Студия</a></li>
-                <li><a class="link" href="./portfolio.html">Портфолио</a></li>
+                <li><a class="link-active" href="./portfolio.html">Портфолио</a></li>
                 <li><a class="link" href="">Контакты</a></li>
             </ul>
         </nav>
@@ -28,77 +29,88 @@
     </header>
 
     <main>
-        <h1>Наши работы</h1>
-       <div>
-            <button type="button">Все</button>
-            <button type="button">Веб-сайты</button>
-            <button type="button">Приложения</button>
-            <button type="button">Дизайн</button>
-            <button type="button">Маркетинг</button>
-       </div>         
+        <h1 class="block-name secret">Наши работы</h1>
+       <ul class="filter">
+           <li>
+                <button class="filter fb " type="button">Все</button>
+           </li>
+           <li>
+                <button class="filter fb" type="button">Веб-сайты</button>
+           </li>
+           <li>
+                <button class="filter fb" type="button">Приложения</button>
+           </li>
+           <li>
+                <button class="filter fb" type="button">Дизайн</button>
+           </li>
+           <li>
+                <button class="filter fb" type="button">Маркетинг</button>
+           </li>
+       </ul>
+               
         <section>
-            <ul>
+            <ul class="menu">
                 <li>
-                    <a href="">
+                    <a class="posters" href="">
                         <img src="./images/portfolio/technokryak.jpg" alt="Веб сайт проекта Технокряк" width="370" height="294">
-                        <h2>Технокряк</h2>
-                        <p>Веб-сайт</p>
+                        <h2 class="posters-plogo">Технокряк</h2>
+                        <p class="posters-ptext">Веб-сайт</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="posters" href="">
                         <img src="./images/portfolio/poster.jpg" alt="Постер баскетбольного матча" width="370" height="294">
-                        <h2>Постер New Orlean vs Golden</h2>
-                        <p>Дизайн</p>
+                        <h2 class="posters-plogo">Постер <span lang="en">New Orlean vs Golden</span></h2>
+                        <p class="posters-ptext">Дизайн</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="posters" href="">
                         <img src="./images/portfolio/restoran.jpg" alt="Ресторан морской кухни" width="370" height="294">
-                        <h2>Ресторан Seafood</h2>
-                        <p>Приложение</p>
+                        <h2 class="posters-plogo">Ресторан <span lang="en">Seafood</span></h2>
+                        <p class="posters-ptext">Приложение</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="posters" href="">
                         <img src="./images/portfolio/project-prime.jpg" alt="Изображение наушников" width="370" height="294">
-                        <h2>Проект Prime</h2>
-                        <p>Маркетинг</p>
+                        <h2 class="posters-plogo">Проект <span lang="en">Prime</span></h2>
+                        <p class="posters-ptext">Маркетинг</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="posters" href="">
                         <img src="./images/portfolio/procject-boxes.jpg" alt="Изображение дизайнерских коробок" width="370" height="294">
-                        <h2>Проект Boxes</h2>
-                        <p>Приложение</p>
+                        <h2 class="posters-plogo">Проект <span lang="en">Boxes</span></h2>
+                        <p class="posters-ptext">Приложение</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="posters" href="">
                         <img src="./images/portfolio/web-site.jpg" alt="Веб сайт проекта" width="370" height="294">
-                        <h2 lang="en">Inspiration has no Borders</h2>
-                        <p>Веб-сайт</p>
+                        <h2  class="posters-plogo" lang="en">Inspiration has no Borders</h2>
+                        <p class="posters-ptext">Веб-сайт</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="posters" href="">
                         <img src="./images/portfolio/design.jpg" alt="Изображение разворота журнала" width="370" height="294">
-                        <h2>Издание Limited Edition</h2>
-                        <p>Дизайн</p>
+                        <h2 class="posters-plogo">Издание <span lang="en">Limited Edition</span></h2>
+                        <p class="posters-ptext">Дизайн</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="posters" href="">
                         <img src="./images/portfolio/project-lab.jpg" alt="Изображение дизайнерского элемента" width="370" height="294">
-                        <h2>Проект LAB</h2>
-                        <p>Маркетинг</p>
+                        <h2 class="posters-plogo">Проект <span lang="en">LAB</span></h2>
+                        <p class="posters-ptext">Маркетинг</p>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a class="posters" href="">
                         <img src="./images/portfolio/growing-business.jpg" alt="Изображение рабочего места" width="370" height="294">
-                        <h2 lang="en">Growing Business</h2>
-                        <p>Приложение</p>
+                        <h2 class="posters-plogo" lang="en">Growing Business</h2>
+                        <p class="posters-ptext">Приложение</p>
                     </a>
                 </li>
             </ul>
